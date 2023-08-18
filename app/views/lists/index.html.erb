@@ -1,0 +1,8 @@
+<%= render partial: "list_banner"%>
+
+<%= render "form"%>
+<div id="list">
+  <% @lists.each do |list| %>
+    <%= render partial: "list_card", locals: { list: list } %>
+  <% end %>
+</div>
